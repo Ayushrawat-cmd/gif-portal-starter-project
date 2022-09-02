@@ -8,23 +8,23 @@ const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 
 const App = () => {
   // ActionsconstcheckIfWalletIsConnected= async() => {
-  try{
-      const { solana } = window;
-if(solana) {
-        if(solana.isPhantom) {
-          console.log('Phantom wallet found!');
-          const response = awaitsolana.connect({ onlyIfTrusted: true});
-          console.log(
-            'Connected with Public Key:',
-            response.publicKey.toString()
-          );
-        }
-      } else{
-        alert('Solana object not found! Get a Phantom Wallet :ghost:');
-      }
-    } catch(error) {
-      console.error(error);
-    }
+//   try{
+//       const { solana } = window;
+// if(solana) {
+//         if(solana.isPhantom) {
+//           console.log('Phantom wallet found!');
+//           const response = awaitsolana.connect({ onlyIfTrusted: true});
+//           console.log(
+//             'Connected with Public Key:',
+//             response.publicKey.toString()
+//           );
+//         }
+//       } else{
+//         alert('Solana object not found! Get a Phantom Wallet :ghost:');
+//       }
+//     } catch(error) {
+//       console.error(error);
+//     }
   const connectWallet = async() => {};
   const renderNotConnectedContainer= () => (
     <button className="cta-button connect-wallet-button" onClick={connectWallet}>Connect to Wallet
